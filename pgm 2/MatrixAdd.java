@@ -1,4 +1,3 @@
-package fasilMca;
 import java.util.*;
 public class MatrixAdd {
 
@@ -22,7 +21,7 @@ public class MatrixAdd {
 					a[i][j]=s.nextInt();
 			}
 			System.out.println("Enter the element of Matrix B:");
-			for(i=0;i<m;i++) {
+			for(i=0;i<m;i++) {			
 				for(j=0;j<n;j++)
 					b[i][j]=s.nextInt();
 			}

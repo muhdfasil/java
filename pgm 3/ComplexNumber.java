@@ -1,5 +1,3 @@
-package fasilMca;
-
 public class ComplexNumber {
 	double real,img;
 	ComplexNumber(double r, double i){

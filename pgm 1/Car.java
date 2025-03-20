@@ -1,34 +1,28 @@
-package fasilMca;
 class Product {
     String pname, pcode;
     int price;
 
-    public Product() {}
-
-    public Product(String pname, String pcode, int price) {
+    Product(String pname, String pcode, int price) {
         this.pname = pname;
         this.pcode = pcode;
         this.price = price;
     }
 
-    public int getPrice() {
+    int getPrice() {
         return price;
     }
 
-    public void display() {
+    void display() {
         System.out.println("pcode: " + this.pcode);
         System.out.println("pname: " + this.pname);
         System.out.println("price : " + this.price + "\n");
     }
 }
 
-public class Car {
+class Car {
 
     public static void main(String[] args) {
-        Product p1 = new Product();
-        p1.pcode = "Car123";
-        p1.pname = "Benz";
-        p1.price = 1000;
+        Product p1 = new Product("Benz","Car123",1000);
         System.out.println("Displaying p1:");
         p1.display();
 
@@ -40,7 +34,6 @@ public class Car {
         System.out.println("Displaying p3:");
         p3.display();
 
-        // Find the product with the lowest price
         Product cheapest = p1;
         if (p2.getPrice() < cheapest.getPrice()) {
             cheapest = p2;
